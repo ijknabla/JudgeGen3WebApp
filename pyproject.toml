@@ -22,3 +22,18 @@ pyproject-flake8 = "^6.0.0.post1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.flake8]
+exclude = ".venv"
+max-line-length = 100
+per-file-ignores = [
+    "modelicalang/v?_?.py:E501,F403,F405"
+]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+

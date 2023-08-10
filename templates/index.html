@@ -1,5 +1,9 @@
 <html>
   <title>Judge</title>
 
-  <button type="submit" name="pokemon_button">Button</button>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" name="pokemon_button">Button</button>
+  </form>
+
 </html>

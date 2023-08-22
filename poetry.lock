@@ -284,6 +284,21 @@ docs = ["furo (>=2023.7.26)", "proselint (>=0.13)", "sphinx (>=7.1.1)", "sphinx-
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-cov (>=4.1)", "pytest-mock (>=3.11.1)"]
 
 [[package]]
+name = "pokemon-gen3"
+version = "0.0.0a2"
+description = ""
+optional = false
+python-versions = "^3.7"
+files = []
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/ijknabla/Pokemon-Gen3.git"
+reference = "0.0.0a2"
+resolved_reference = "a4a6b398000ee049edc9d695b317a3b5112c76ac"
+
+[[package]]
 name = "pycodestyle"
 version = "2.10.0"
 description = "Python style guide checker"
@@ -394,4 +409,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "305a3ba130ed420e4a0b22e934591b9f052b39b6af1ce0a0abe9e8c6fa8ba149"
+content-hash = "8a9f937be128177b63831c0bb7e6b9613e3dea6c7cdb50d2269aacc574494cca"

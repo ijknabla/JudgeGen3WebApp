@@ -10,6 +10,7 @@ packages = []
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = "^4.2.4"
+pokemon-gen3 = {git = "https://github.com/ijknabla/Pokemon-Gen3.git", rev = "0.0.0a2"}
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.7.0"

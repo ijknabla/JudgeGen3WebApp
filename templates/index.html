@@ -3,6 +3,34 @@
 
   <form method="post">
     {% csrf_token %}
+    <table>
+      <tr>
+        <td>
+          <label>ポケモン</label>
+        </td>
+        <td>
+          <input type="text" name="pokemon" autocomplete="on" list="pokemon">
+          <datalist id="pokemon">
+            {% for pokemon in pokemons %}
+            <option value= {{pokemon}} >
+            {% endfor %}
+          </datalist>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>せいかく</label>
+        </td>
+        <td>
+          <input type="text" name="nature" autocomplete="on" list="nature">
+          <datalist id="nature">
+            {% for nature in natures %}
+            <option value= {{nature}} >
+            {% endfor %}
+          </datalist>
+        </td>
+      </tr>
+    </table>
     <button type="submit" name="pokemon_button">Button</button>
   </form>
 
